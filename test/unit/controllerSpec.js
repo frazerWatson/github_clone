@@ -21,7 +21,7 @@ describe('GitClone controllers', function() {
       ctrl = $controller('GitUserCtrl', {$scope:scope});
     }));
 
-    it('should return list of "users"', function() {
+    it('should return the length of the list users', function() {
       expect(scope.users).toBeUndefined();
       $httpBackend.flush();
       expect(scope.users.length).toBe(2);
