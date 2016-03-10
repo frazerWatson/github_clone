@@ -4,7 +4,7 @@ Github API - Angular Project
 Team - Byte 2
 -------
 
-Members: Reiss, Fareed, Mat Drake, Frazier, Godfrey
+Members: Reiss, Fareed, Mat Drake, Frazer, Godfrey
 
 
 Build Badges
