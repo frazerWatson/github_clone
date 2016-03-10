@@ -9,7 +9,7 @@ describe('my app', function() {
 	});
 
 	it('should have a list of 30 users', function(){
-		var list = element.all(by.css('.users list'));
+		var list = element.all(by.css('.users li'));
 		expect(list.count()).toBe(30);
 	});
 });
