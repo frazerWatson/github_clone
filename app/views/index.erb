@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app='gitcloneApp'>
+  <head>
+    <title>github viewer</title>
+    <script src='bower_components/angular/angular.js'></script>
+    <script src='js/gitcloneApp.js'></script>
+    <script src='js/controllers/GitUserCtrl.js'></script>
+ </head>
+  <body>
+    <section ng-controller='GitUserCtrl as usercontroller'>
+      <ul class='users'>
+        <li ng-repeat='user in users'>
+          <span>{{ user.login }}</span>
+          <p>{{ user.id }}</p>
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>

@@ -8,7 +8,10 @@ module.exports = function(config){
       'app/bower_components/angular-route/angular-route.js',
       'app/bower_components/angular-mocks/angular-mocks.js',
       'app/components/**/*.js',
-      'app/view*/**/*.js'
+      'app/view*/**/*.js',
+      'test/unit/*.js',
+      'app/public/js/*.js',
+      'app/public/js/controllers/*.js'
     ],
 
     autoWatch : true,
@@ -28,6 +31,8 @@ module.exports = function(config){
       outputFile: 'test_out/unit.xml',
       suite: 'unit'
     }
+
+
 
   });
 };
