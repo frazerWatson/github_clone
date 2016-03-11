@@ -13,6 +13,11 @@ describe('my app', function() {
     expect(list.count()).toBe(30);
   });
 
+  it('should give us a list of 30 avatars', function(){
+  	var list = element.all(by.css('.defaultlist li img'));
+  	expect(list.count()).toBe(30)
+  });
+
   it('should let you search for a username', function(){
     var user = 'reissjohnson'
     var list = element.all(by.css('.users li'));
@@ -22,3 +27,5 @@ describe('my app', function() {
     expect(list.count()).toBe(1);
   });
 });
+
+
