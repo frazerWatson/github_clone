@@ -9,7 +9,7 @@ describe('my app', function() {
   });
 
   it('should have a list of 30 users', function(){
-    var list = element.all(by.css('.users li'));
+    var list = element.all(by.css('.defaultlist li'));
     expect(list.count()).toBe(30);
   });
 
@@ -18,7 +18,7 @@ describe('my app', function() {
     var list = element.all(by.css('.users li'));
     var search = element(by.model('username'))
     search.sendKeys('reissjohnson')
-    search.click();
+    element(by.css('#search')).click();
     expect(list.count()).toBe(1);
   });
 });

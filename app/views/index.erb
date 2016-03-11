@@ -8,17 +8,30 @@
     <script src='js/controllers/GitUserSearchCtrl.js'></script>
  </head>
  <body>
-   <section ng-controller='GitUserSearchCtrl as searchctrl'>
+   <section ng-controller='GitUserSearchCtrl'>
     Search: <input ng-model='username' name='input' type='text'> 
-    <button ng-click="searchctrl.getInfo()">Search</button>
-   </section>
-   <section ng-controller='GitUserCtrl'>
+    <button ng-click="getInfo()" id='search'>Search</button>
+   <div>
+
+   
       <ul class='users'>
         <li ng-repeat='user in users'>
           <span>{{ user.login }}</span>
           <p>{{ user.id }}</p>
         </li>
       </ul>
+   </div>
+
     </section>
+<p>-----------------------------------</p>
+      <section ng-controller='GitUserCtrl'>
+      <ul class='defaultlist'>
+        <li ng-repeat='user in users'>
+          <span>{{ user.login }}</span>
+          <p>{{ user.id }}</p>
+        </li>
+      </ul>
+    </section>
+
   </body>
 </html>
