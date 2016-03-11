@@ -18,6 +18,14 @@ describe('my app', function() {
   	expect(list.count()).toBe(30)
   });
 
+  it('should give us a users followers', function(){
+    var list = element.all(by.css('.followers p'));
+    var search = element(by.model('username'))
+    search.sendKeys('reissjohnson')
+    element(by.css('#search')).click();
+    expect(element(by.cssContainingText('.followers p', '3'))).toBe(true)
+  });
+
   it('should let you search for a username', function(){
     var user = 'reissjohnson'
     var list = element.all(by.css('.users li'));
@@ -26,6 +34,7 @@ describe('my app', function() {
     element(by.css('#search')).click();
     expect(list.count()).toBe(1);
   });
+
 });
 
 
