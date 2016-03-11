@@ -5,9 +5,14 @@
     <script src='angular_files/angular/angular.js'></script>
     <script src='js/gitcloneApp.js'></script>
     <script src='js/controllers/GitUserCtrl.js'></script>
+    <script src='js/controllers/GitUserSearchCtrl.js'></script>
  </head>
-  <body>
-    <section ng-controller='GitUserCtrl as usercontroller'>
+ <body>
+   <section ng-controller='GitUserSearchCtrl as searchctrl'>
+    Search: <input ng-model='username' name='input' type='text'> 
+    <button ng-click="searchctrl.getInfo()">Search</button>
+   </section>
+   <section ng-controller='GitUserCtrl'>
       <ul class='users'>
         <li ng-repeat='user in users'>
           <span>{{ user.login }}</span>
