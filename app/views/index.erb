@@ -6,6 +6,7 @@
     <script src='js/gitcloneApp.js'></script>
     <script src='js/controllers/GitUserCtrl.js'></script>
     <script src='js/controllers/GitUserSearchCtrl.js'></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/application.css">
  </head>
  <body>
    <section ng-controller='GitUserSearchCtrl'>
@@ -19,7 +20,7 @@
           <p>Username: {{ user.login }}</p>
           <p class="followers">Followers: {{ user.followers }}</p>
           <p class="repos">Repos: {{user.public_repos}}</p>
-          <img src='{{user.avatar_url}}'>
+          <img class="avatar" src='{{user.avatar_url}}'>
         </li>
       </ul>
    </div>
@@ -30,7 +31,7 @@
       <ul class='defaultlist'>
         <li ng-repeat='user in users'>
           <p>Username: {{ user.login }}</p>
-          <img src='{{ user.avatar_url }}'>
+          <img class="avatar" src='{{ user.avatar_url }}'>
         </li>
       </ul>
     </section>
