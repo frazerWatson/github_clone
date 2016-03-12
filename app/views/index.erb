@@ -16,8 +16,8 @@
    
       <ul class='users'>
         <li ng-repeat='user in users'>
-          <span>{{ user.login }}</span>
-          <p>{{ user.id }}</p>
+          <p>Username: {{ user.login }}</p>
+          <p class="followers">Followers: {{ user.followers }}</p>
           <img src='{{user.avatar_url}}'>
         </li>
       </ul>
@@ -28,9 +28,8 @@
       <section ng-controller='GitUserCtrl'>
       <ul class='defaultlist'>
         <li ng-repeat='user in users'>
-          <span>{{ user.login }}</span>
-          <p>{{ user.id }}</p>
-          <img src='{{user.avatar_url}}'>
+          <p>Username: {{ user.login }}</p>
+          <img src='{{ user.avatar_url }}'>
         </li>
       </ul>
     </section>
