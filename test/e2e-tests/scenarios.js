@@ -29,10 +29,18 @@ describe('my app', function() {
 
   it('should give us a users followers', function(){
     var list = element.all(by.css('.followers'));
-    var search = element(by.model('username'))
-    search.sendKeys('reissjohnson')
+    var search = element(by.model('username'));
+    search.sendKeys('reissjohnson');
     element(by.css('#search')).click();
     expect(list.getText()).toMatch("Followers: 3");
+  });
+
+  it('should give display the number of users repo', function(){
+  	var list = element.all(by.css('.repos'));
+  	var search = element(by.model('username'));
+  	search.sendKeys('fareedpatel');
+  	element(by.css('#search')).click();
+  	expect(list.getText()).toMatch("Repos: 24");
   });
 
 });

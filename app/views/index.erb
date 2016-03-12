@@ -18,6 +18,7 @@
         <li ng-repeat='user in users'>
           <p>Username: {{ user.login }}</p>
           <p class="followers">Followers: {{ user.followers }}</p>
+          <p class="repos">Repos: {{user.public_repos}}</p>
           <img src='{{user.avatar_url}}'>
         </li>
       </ul>
