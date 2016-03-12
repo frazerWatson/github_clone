@@ -43,6 +43,14 @@ describe('my app', function() {
   	expect(list.getText()).toMatch("Repos: 24");
   });
 
+  it('should display "user not found" message when a user doesn\'t exist', function(){
+    var list = element.all(by.css('.error_not_found'));
+    var search = element(by.model('username'));
+    search.sendKeys('fareedpatel888');
+    element(by.css('#search')).click();
+    expect(element(by.css('.error_not_found'))).toMatch("User Not Found");
+  });
+
 });
 
 

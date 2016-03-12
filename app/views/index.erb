@@ -17,10 +17,13 @@
    
       <ul class='users'>
         <li ng-repeat='user in users'>
+          <div ng-show="userNotFound"><p class="error_not_found">User Not Found</p></div>
+          <div ng-hide="userNotFound">
           <p>Username: {{ user.login }}</p>
           <p class="followers">Followers: {{ user.followers }}</p>
           <p class="repos">Repos: {{user.public_repos}}</p>
           <img class="avatar" src='{{user.avatar_url}}'>
+        </div>
         </li>
       </ul>
    </div>
