@@ -17,7 +17,7 @@
    
       <ul class='users'>
         <li ng-repeat='user in users'>
-          <div ng-show="userNotFound"><p id="error_not_found">User Not Found</p></div>
+          <span class="ErrorNotFound" ng-show="userNotFound">User Not Found</span>
           <div ng-hide="userNotFound">
           <p>Username: {{ user.login }}</p>
           <p class="followers">Followers: {{ user.followers }}</p>
