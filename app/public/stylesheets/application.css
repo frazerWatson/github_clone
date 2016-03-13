@@ -5,6 +5,12 @@
 	
 }
 
+.users img {
+	width: 300px;
+	height: 300px;
+	float: left;
+}
+
 
 .avatar {
   width: 150px;
