@@ -31,8 +31,8 @@ Instructions
 
 Testing
 
-Run server npm start
-Run Karma npm test in another terminal tab
+Run server npm start,
+Run Karma npm test in another terminal tab,
 Run Protractor npm run protractor in another terminal tab
 
 User Stories - Must Haves
