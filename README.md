@@ -14,20 +14,20 @@ Simple GitHub Profile app that using Github API/Javascript/AngularJS to allow se
 
 
 
-Technologies & Principles
+Technologies
 
 Angular JS
 Javascript
 GitHub API
 Testing with Jasmine/Karma
 Node & npm
-Installation
 
+
+Installation
 Add dependencies by bower install
 
 Instructions
 -------
-:construction:
 
 Testing
 
