@@ -1,48 +1,45 @@
 <!DOCTYPE html>
 <html ng-app='gitcloneApp'>
-<head>
-  <title>github viewer</title>
-  <script src='angular_files/angular/angular.js'></script>
-  <script src='js/gitcloneApp.js'></script>
-  <script src='js/controllers/GitUserCtrl.js'></script>
-  <script src='js/controllers/GitUserSearchCtrl.js'></script>
-  <link rel="stylesheet" type="text/css" href="stylesheets/application.css" >
-</head>
-<body>
- <section class='individual-search' ng-controller='GitUserSearchCtrl'>
-<input ng-model='username' name='input' type='text' placeholder='enter a username'> 
-  <button ng-click="getInfo()" id='search'>Search</button>
-  <div>
-
-
+  <head>
+    <title>github viewer</title>
+    <script src='angular_files/angular/angular.js'></script>
+    <script src='js/gitcloneApp.js'></script>
+    <script src='js/controllers/GitUserCtrl.js'></script>
+    <script src='js/controllers/GitUserSearchCtrl.js'></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/application.css" >
+  </head>
+  <body>
+    <section class='individual-search' ng-controller='GitUserSearchCtrl'>
+    <input id="searchinput" ng-model='username' name='input' type='text' placeholder='enter a username'> 
+    <button ng-click="getInfo()" id='search'>Search</button>
+    <div ng-show="userNotFound"><p id="error_not_found">User Not Found</p></div>
     <ul class='users'>
       <li ng-repeat='user in users'>
-        <div ng-show="userNotFound"><p id="error_not_found">User Not Found</p></div>
-        <div ng-hide="userNotFound">
-
-
+      <div ng-hide="userNotFound">
+        <a href="{{ user.html_url}} ">
           <img src='{{user.avatar_url}}'>
-          <p>{{ user.login }}</p>
-          <p class="followers">Followers: {{ user.followers }}</p>
-          <p class="repos">Repos: {{user.public_repos}}</p>
+        </a>
+        <div class="user-info">
+          <p class="login">{{ user.login }}</p>
+          <p class="followers">Followers: <strong>{{ user.followers }}</strong></p>
+          <p class="repos">Repos: <strong>{{user.public_repos}}</strong></p>
         </div>
+      </div>
       </li>
     </ul>
-  </div>
+    </section>
 
-</section>
+    <section class="defaultsearch"  ng-controller='GitUserCtrl'>
+    <h1> The First 30 Github Users! </h1>
+    <ul class='defaultlist img-list'>
+      <li ng-repeat='user in users'>
+      <a href="{{ user.html_url}} ">
+        <img class="avatar" src='{{ user.avatar_url }}'>
+        <span class="text-content"><span>{{ user.login }}</span></span>
+      </a>
+      </li>
+    </ul>
+    </section>
 
-
-<section ng-controller='GitUserCtrl'>
-  <ul class='defaultlist img-list'>
-    <li ng-repeat='user in users'>
-    <a href="{{ user.html_url}} ">
-      <img class="avatar" src='{{ user.avatar_url }}'>
-          <span class="text-content"><span>{{ user.login }}</span></span>
-          </a>
-    </li>
-  </ul>
-</section>
-
-</body>
+  </body>
 </html>
