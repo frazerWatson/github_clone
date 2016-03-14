@@ -1,27 +1,27 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli [ '/usr/local/Cellar/node/5.7.0/bin/node',
 1 verbose cli   '/usr/local/bin/npm',
 1 verbose cli   'run',
 1 verbose cli   'protractor' ]
-2 info using npm@3.8.0
-3 info using node@v5.7.1
+2 info using npm@3.6.0
+3 info using node@v5.7.0
 4 verbose run-script [ 'preprotractor', 'protractor', 'postprotractor' ]
 5 info lifecycle github_viewer@0.0.0~preprotractor: github_viewer@0.0.0
 6 verbose lifecycle github_viewer@0.0.0~preprotractor: unsafe-perm in lifecycle true
-7 verbose lifecycle github_viewer@0.0.0~preprotractor: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/reissjohnson/Desktop/Projects/github_clone/node_modules/.bin:/usr/local/bin:/Users/reissjohnson/.rvm/gems/ruby-2.2.1/bin:/Users/reissjohnson/.rvm/gems/ruby-2.2.1@global/bin:/Users/reissjohnson/.rvm/rubies/ruby-2.2.1/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/reissjohnson/.rvm/gems/ruby-2.2.1/bin:/Users/reissjohnson/.rvm/gems/ruby-2.2.1@global/bin:/Users/reissjohnson/.rvm/rubies/ruby-2.2.1/bin:/Users/reissjohnson/.rvm/bin:/Users/reissjohnson/.rvm/gems/ruby-2.2.1/bin:/Users/reissjohnson/.rvm/gems/ruby-2.2.1@global/bin:/Users/reissjohnson/.rvm/rubies/ruby-2.2.1/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/reissjohnson/.rvm/bin
-8 verbose lifecycle github_viewer@0.0.0~preprotractor: CWD: /Users/reissjohnson/Desktop/Projects/github_clone
+7 verbose lifecycle github_viewer@0.0.0~preprotractor: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/GotWai/Dropbox/Projects/github-angular/node_modules/.bin:/Users/GotWai/.rvm/gems/ruby-2.2.3/bin:/Users/GotWai/.rvm/gems/ruby-2.2.3@global/bin:/Users/GotWai/.rvm/rubies/ruby-2.2.3/bin:/Users/GotWai/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/GotWai/.rvm/bin
+8 verbose lifecycle github_viewer@0.0.0~preprotractor: CWD: /Users/GotWai/Dropbox/Projects/github-angular
 9 silly lifecycle github_viewer@0.0.0~preprotractor: Args: [ '-c', 'npm run update-webdriver' ]
 10 silly lifecycle github_viewer@0.0.0~preprotractor: Returned: code: 0  signal: null
 11 info lifecycle github_viewer@0.0.0~protractor: github_viewer@0.0.0
 12 verbose lifecycle github_viewer@0.0.0~protractor: unsafe-perm in lifecycle true
-13 verbose lifecycle github_viewer@0.0.0~protractor: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/reissjohnson/Desktop/Projects/github_clone/node_modules/.bin:/usr/local/bin:/Users/reissjohnson/.rvm/gems/ruby-2.2.1/bin:/Users/reissjohnson/.rvm/gems/ruby-2.2.1@global/bin:/Users/reissjohnson/.rvm/rubies/ruby-2.2.1/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/reissjohnson/.rvm/gems/ruby-2.2.1/bin:/Users/reissjohnson/.rvm/gems/ruby-2.2.1@global/bin:/Users/reissjohnson/.rvm/rubies/ruby-2.2.1/bin:/Users/reissjohnson/.rvm/bin:/Users/reissjohnson/.rvm/gems/ruby-2.2.1/bin:/Users/reissjohnson/.rvm/gems/ruby-2.2.1@global/bin:/Users/reissjohnson/.rvm/rubies/ruby-2.2.1/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/reissjohnson/.rvm/bin
-14 verbose lifecycle github_viewer@0.0.0~protractor: CWD: /Users/reissjohnson/Desktop/Projects/github_clone
+13 verbose lifecycle github_viewer@0.0.0~protractor: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/GotWai/Dropbox/Projects/github-angular/node_modules/.bin:/Users/GotWai/.rvm/gems/ruby-2.2.3/bin:/Users/GotWai/.rvm/gems/ruby-2.2.3@global/bin:/Users/GotWai/.rvm/rubies/ruby-2.2.3/bin:/Users/GotWai/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/GotWai/.rvm/bin
+14 verbose lifecycle github_viewer@0.0.0~protractor: CWD: /Users/GotWai/Dropbox/Projects/github-angular
 15 silly lifecycle github_viewer@0.0.0~protractor: Args: [ '-c', 'protractor test/e2e-tests/protractor.conf.js' ]
 16 silly lifecycle github_viewer@0.0.0~protractor: Returned: code: 1  signal: null
 17 info lifecycle github_viewer@0.0.0~protractor: Failed to exec protractor script
 18 verbose stack Error: github_viewer@0.0.0 protractor: `protractor test/e2e-tests/protractor.conf.js`
 18 verbose stack Exit status 1
-18 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:239:16)
+18 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:232:16)
 18 verbose stack     at emitTwo (events.js:100:13)
 18 verbose stack     at EventEmitter.emit (events.js:185:7)
 18 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
@@ -30,11 +30,11 @@
 18 verbose stack     at maybeClose (internal/child_process.js:827:16)
 18 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
 19 verbose pkgid github_viewer@0.0.0
-20 verbose cwd /Users/reissjohnson/Desktop/Projects/github_clone
-21 error Darwin 13.4.0
-22 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "run" "protractor"
-23 error node v5.7.1
-24 error npm  v3.8.0
+20 verbose cwd /Users/GotWai/Dropbox/Projects/github-angular
+21 error Darwin 15.3.0
+22 error argv "/usr/local/Cellar/node/5.7.0/bin/node" "/usr/local/bin/npm" "run" "protractor"
+23 error node v5.7.0
+24 error npm  v3.6.0
 25 error code ELIFECYCLE
 26 error github_viewer@0.0.0 protractor: `protractor test/e2e-tests/protractor.conf.js`
 26 error Exit status 1
