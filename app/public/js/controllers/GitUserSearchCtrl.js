@@ -10,6 +10,7 @@ gitcloneApp.controller('GitUserSearchCtrl', ['$scope', '$http', function($scope,
     })
     .error(function () {
       $scope.userNotFound = true;
+      
     })
   }
 

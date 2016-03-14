@@ -44,10 +44,11 @@ describe('my app', function() {
   });
 
   it('should display "user not found" message when a user doesn\'t exist', function(){
+    var errornotfound = element(by.css('span.ErrorNotFound'));
     var search = element(by.model('username'));
-    search.sendKeys('fareedpatel888');
+    search.sendKeys('fareedpatel8888');
     element(by.css('#search')).click();
-    expect(element(by.css('#error_not_found')).isPresent()).toBe(true);
+    expect(errornotfound.isPresent()).toBe(true);
   });
 
 });
