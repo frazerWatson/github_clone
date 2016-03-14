@@ -16,10 +16,10 @@ Simple GitHub Profile app that using Github API/Javascript/AngularJS to allow se
 
 Technologies
 
-Angular JS
-Javascript
-GitHub API
-Testing with Jasmine/Karma
+Angular JS,
+Javascript,
+GitHub API,
+Testing with Jasmine/Karma,
 Node & npm
 
 
