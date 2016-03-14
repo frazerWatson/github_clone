@@ -7,21 +7,33 @@ Team - Byte 2
 Members: Reiss, Fareed, Mat Drake, Frazer, Godfrey.
 
 
-Build Badges
--------
-:construction:
+Description
+
+Simple GitHub Profile app that using Github API/Javascript/AngularJS to allow search through Github user profiles and show list of github profiles information for requested username: user's login,user's avatar, number of followers and number of repos.
 
 
-Implementation
--------
 
-:construction:
 
+Technologies & Principles
+
+Angular JS
+Javascript
+GitHub API
+Testing with Jasmine/Karma
+Node & npm
+Installation
+
+Add dependencies by bower install
 
 Instructions
 -------
 :construction:
 
+Testing
+
+Run server npm start
+Run Karma npm test in another terminal tab
+Run Protractor npm run protractor in another terminal tab
 
 User Stories - Must Haves
 -------
