@@ -7,10 +7,12 @@
   <script src='js/controllers/GitUserCtrl.js'></script>
   <script src='js/controllers/GitUserSearchCtrl.js'></script>
   <link rel="stylesheet" type="text/css" href="stylesheets/application.css" >
+  <link rel='stylesheet' href='bower_components/angular-spinkit/build/angular-spinkit.min.css'>
+  <script src='bower_components/angular-spinkit/build/angular-spinkit.js'></script>
 </head>
 <body>
  <section ng-controller='GitUserSearchCtrl'>
- Search: <input ng-model='username' name='input' type='text' placeholder='enter a username'> 
+ <input ng-model='username' name='input' type='text' placeholder='enter a username'> 
   <button ng-click="getInfo()" id='search'>Search</button>
   <div>
 
@@ -21,7 +23,7 @@
         <div ng-hide="userNotFound">
 
 
-          <img class="avatar" src='{{user.avatar_url}}'>
+          <img class="avatar" src='{{user.avatar_url}}' spinkit-image-preloader='fading-circle-spinner'>
           <p>{{ user.login }}</p>
           <p class="followers">Followers: {{ user.followers }}</p>
           <p class="repos">Repos: {{user.public_repos}}</p>
@@ -36,7 +38,7 @@
   <ul class='defaultlist img-list'>
     <li ng-repeat='user in users'>
     <a href="{{ user.html_url}} ">
-      <img class="avatar" src='{{ user.avatar_url }}'>
+      <img class="avatar" src='{{ user.avatar_url }}' spinkit-image-preloader='fading-circle-spinner'>
           <span class="text-content"><span>{{ user.login }}</span></span>
           </a>
     </li>

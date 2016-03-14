@@ -1,2 +1,2 @@
 
-var gitcloneApp = angular.module('gitcloneApp', []);
+var gitcloneApp = angular.module('gitcloneApp', ['angular-spinkit']);
