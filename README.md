@@ -70,7 +70,6 @@ So I can see how prolific a user is
 I want to view the number of repos each user in the list has
 ```
 
-
 User Stories - Nice-to-haves
 -------
 :construction:
