@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/frazerWatson/github_clone.png?label=ready&title=Ready)](https://waffle.io/frazerWatson/github_clone)
 Github API - Angular Project
 ===================
 
